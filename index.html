@@ -21,7 +21,8 @@
 </head>
 <body class="bg-white">
     
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-blur bg-white/80">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-between h-16">
                 <a href="#" class="text-xl font-semibold text-gray-900 tracking-tight">RD Mobility</a>
@@ -29,7 +30,7 @@
                     <button onclick="scrollToSection('features')" class="text-sm text-gray-900 hover:text-gray-600 transition-colors">Recursos</button>
                     <button onclick="scrollToSection('specs')" class="text-sm text-gray-900 hover:text-gray-600 transition-colors">Especificações</button>
                     <button onclick="scrollToSection('gallery')" class="text-sm text-gray-900 hover:text-gray-600 transition-colors">Galeria</button>
-                    <a href="#pricing" class="text-sm font-medium text-white bg-gray-900 px-5 py-2.5 rounded-full hover:bg-gray-700 transition-colors">Comprar Agora</a>
+                    <a href="https://wa.me/5547999999999" target="_blank" class="text-sm font-medium text-white bg-gray-900 px-5 py-2.5 rounded-full hover:bg-gray-700 transition-colors">Contato</a>
                 </div>
                 <button onclick="toggleMobileMenu()" class="md:hidden p-2 -mr-2">
                     <svg id="menuIcon" class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -39,6 +40,7 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
     <div id="mobileMenuOverlay" class="fixed inset-0 z-40 md:hidden hidden">
         <div class="absolute inset-0 bg-black/20" onclick="toggleMobileMenu()"></div>
         <div id="mobileMenu" class="mobile-menu absolute right-0 top-0 bottom-0 w-72 bg-white shadow-2xl">
@@ -46,39 +48,28 @@
                 <button onclick="scrollToSection('features'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Recursos</button>
                 <button onclick="scrollToSection('specs'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Especificações</button>
                 <button onclick="scrollToSection('gallery'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Galeria</button>
-                <a href="#pricing" onclick="toggleMobileMenu();" class="mt-6 block text-center text-lg font-medium text-white bg-gray-900 px-6 py-3 rounded-full">Comprar Agora</a>
+                <a href="https://wa.me/5547999999999" target="_blank" class="mt-6 block text-center text-lg font-medium text-white bg-gray-900 px-6 py-3 rounded-full">Contato</a>
             </div>
         </div>
     </div>
     
+    <!-- Hero -->
     <section class="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
         <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-16 text-center">
             <div class="fade-in">
-                <span class="inline-block text-sm font-medium tracking-widest text-gray-500 uppercase mb-4">Lançamento RD Mobility</span>
-                <h1 class="text-5xl md:text-7xl font-semibold text-gray-900 tracking-tight leading-tight mb-4">Cadeira Multiuso</h1>
-                
-                <div class="mb-8">
-                    <p class="text-gray-400 text-sm mb-1">Preço Especial</p>
-                    <p class="text-4xl md:text-5xl font-bold text-gray-900">R$ 1.999,00</p>
-                </div>
-
+                <span class="inline-block text-sm font-medium tracking-widest text-gray-500 uppercase mb-6">RD Mobility</span>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold text-gray-900 tracking-tight leading-tight mb-6">Cadeira Multiuso</h1>
                 <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">A revolução em mobilidade e conforto.<br><span class="text-gray-900">Para você e quem você ama.</span></p>
             </div>
-            <div class="mt-12 md:mt-16 hero-image">
-                <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png" alt="Cadeira Multiuso" class="mx-auto max-w-full h-auto max-h-[55vh] object-contain drop-shadow-2xl">
-            </div>
-            <div class="mt-12" style="animation: fadeIn 0.6s 1s ease-out forwards; opacity: 0;">
-                <button onclick="scrollToSection('features')" class="flex flex-col items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mx-auto">
-                    <span class="text-sm font-medium">Conhecer detalhes</span>
-                    <svg class="w-5 h-5 bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-            </div>
+            <div class="mt-12 md:mt-16 hero-image"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png" alt="Cadeira Multiuso" class="mx-auto max-w-full h-auto max-h-[60vh] object-contain drop-shadow-2xl"></div>
+            <div class="mt-12" style="animation: fadeIn 0.6s 1s ease-out forwards; opacity: 0;"><button onclick="scrollToSection('features')" class="flex flex-col items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mx-auto"><span class="text-sm font-medium">Descobrir mais</span><svg class="w-5 h-5 bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button></div>
         </div>
     </section>
 
+    <!-- Features -->
     <section id="features" class="py-24 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 md:mb-24 fade-in"><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Uma cadeira.<br><span class="text-gray-600">Infinitas possibilidades.</span></h2></div>
+            <div class="text-center mb-16 md:mb-24 fade-in"><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight mb-6">Uma cadeira.<br><span class="text-gray-600">Infinitas possibilidades.</span></h2></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                 <div class="text-center group fade-in"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Banho</h3><p class="text-gray-600 leading-relaxed">Perfeita para uso no banheiro, com design resistente à água.</p></div>
                 <div class="text-center group fade-in" style="animation-delay:0.1s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Uso Interno</h3><p class="text-gray-600 leading-relaxed">Funciona como cadeira de rodas para deslocamentos em casa.</p></div>
@@ -88,9 +79,10 @@
         </div>
     </section>
 
+    <!-- Product Showcase -->
     <section class="py-24 md:py-32 bg-gray-100">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Design pensado em cada detalhe.</h2><p class="text-xl text-gray-600 max-w-2xl mx-auto">Engenharia de precisão combinada com materiais premium.</p></div>
+            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight mb-6">Design pensado em cada detalhe.</h2><p class="text-xl text-gray-600 max-w-2xl mx-auto">Engenharia de precisão combinada com materiais premium.</p></div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="lg:col-span-2 bg-white rounded-3xl p-8 md:p-12 flex items-center justify-center fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/7a70ceef1_965a0687-9e98-46a5-817b-79a3bacd1caf.png" alt="Cadeira completa" class="max-w-full h-auto max-h-[500px] object-contain"></div>
                 <div class="bg-white rounded-3xl p-8 flex flex-col fade-in" style="animation-delay:0.1s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/3b6bf5419_998bd91a-e8e8-4beb-bfdb-3f81b1abe6ef.png" alt="Altura ajustável" class="max-w-full h-auto max-h-[300px] object-contain mx-auto mb-6"><h3 class="text-2xl font-semibold text-gray-900 mb-2">Altura Ajustável</h3><p class="text-gray-600">Sistema de regulagem de 48cm a 68cm para adaptação perfeita.</p></div>
@@ -99,6 +91,17 @@
         </div>
     </section>
 
+    <!-- Comfort -->
+    <section class="py-24 md:py-32 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="fade-in"><span class="text-sm font-medium tracking-widest text-gray-400 uppercase mb-6 block">Conforto Superior</span><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-8 leading-tight">O assento mais<br><span class="text-gray-400">confortável</span><br>do mercado.</h2><p class="text-xl text-gray-400 leading-relaxed mb-8">Espuma de alta densidade para horas de conforto.</p><div class="flex flex-wrap gap-8"><div><p class="text-4xl font-semibold">135kg</p><p class="text-gray-400 mt-1">Capacidade máxima</p></div><div><p class="text-4xl font-semibold">180°</p><p class="text-gray-400 mt-1">Abertura traseira</p></div></div></div>
+                <div class="fade-in" style="animation-delay:0.2s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png" alt="Vista traseira" class="w-full h-auto rounded-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caregiver -->
     <section class="py-24 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -107,6 +110,8 @@
                     <ul class="space-y-4">
                         <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Reduz significativamente o esforço físico</span></li>
                         <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Minimiza risco de hérnia de disco</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Previne bico de papagaio</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Alivia dores no nervo ciático</span></li>
                         <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Abertura traseira de 180° exclusiva</span></li>
                     </ul>
                 </div>
@@ -114,14 +119,19 @@
         </div>
     </section>
 
+    <!-- Specs -->
     <section id="specs" class="py-24 md:py-32 bg-gray-100">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in"><h2 class="text-4xl font-semibold text-gray-900 tracking-tight mb-6">Especificações Técnicas</h2></div>
+            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Especificações Técnicas</h2><p class="text-xl text-gray-600">Precisão em cada medida.</p></div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/2fa8c6847_2260d0d8-f324-4c0d-98a5-927211a1b745.png" alt="Medidas" class="w-full h-auto rounded-2xl"></div>
                 <div><div class="bg-white rounded-3xl p-8 md:p-10">
                     <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Altura Ajustável</span><span class="text-gray-900 font-semibold">43 - 68 cm</span></div>
                     <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Largura do Assento</span><span class="text-gray-900 font-semibold">46 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Profundidade do Assento</span><span class="text-gray-900 font-semibold">46 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Largura da Base</span><span class="text-gray-900 font-semibold">55 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Comprimento da Base</span><span class="text-gray-900 font-semibold">64 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Espessura da Base</span><span class="text-gray-900 font-semibold">10 cm</span></div>
                     <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Capacidade Máxima</span><span class="text-gray-900 font-semibold">135 kg</span></div>
                     <div class="flex justify-between items-center py-4"><span class="text-gray-600">Abertura Traseira</span><span class="text-gray-900 font-semibold">180°</span></div>
                 </div></div>
@@ -129,97 +139,220 @@
         </div>
     </section>
 
+    <!-- Gallery -->
     <section id="gallery" class="py-24 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in"><h2 class="text-4xl font-semibold text-gray-900 tracking-tight mb-6">Galeria</h2></div>
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Galeria</h2>
+                <p class="text-xl text-gray-600">Explore cada ângulo.</p>
+            </div>
             <div class="relative bg-gray-100 rounded-3xl overflow-hidden mb-6">
                 <div class="aspect-[16/10] flex items-center justify-center p-8">
                     <img id="mainImage" src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png" alt="Vista" class="max-w-full max-h-full object-contain transition-opacity duration-300">
                 </div>
-                <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg"><svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
-                <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg"><svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
             </div>
+            <!-- Thumbnails -->
             <div class="flex justify-center gap-3 overflow-x-auto pb-2" id="thumbnails">
-                </div>
+                <button onclick="setImage(0)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 ring-2 ring-gray-900 ring-offset-2">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png" alt="Vista lateral" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(1)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png" alt="Vista traseira" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(2)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png" alt="Vista completa" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(3)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/adc706845_4253329b-8f55-46d8-b181-fae7f38917fa.png" alt="Vista frontal" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(4)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/caa3b3a93_a6c38c4a-b46e-439b-a866-55ed90a368a8.png" alt="Vista angular" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(5)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/deb5413d0_b0a0e053-8ef5-496d-a738-6812256eb329.png" alt="Vista perspectiva" class="w-full h-full object-cover bg-gray-100">
+                </button>
+            </div>
         </div>
     </section>
 
-    <section id="pricing" class="py-24 md:py-32 bg-white border-t border-gray-100">
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 md:py-32 bg-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <div class="fade-in">
-                <span class="inline-block text-sm font-medium tracking-widest text-blue-600 uppercase mb-4">Oferta de Lançamento</span>
-                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight mb-8">Adquira a sua RD Mobility</h2>
+                <span class="inline-block text-sm font-medium tracking-widest text-indigo-600 uppercase mb-4">Oferta Exclusiva</span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-8">Garanta a sua agora</h2>
                 
-                <div class="bg-gray-50 rounded-3xl p-8 md:p-12 mb-10 max-w-md mx-auto border border-gray-100 shadow-sm">
-                    <p class="text-gray-500 mb-2 text-base">Valor à vista ou parcelado</p>
-                    <div class="flex items-center justify-center mb-8">
-                        <span class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">R$ 1.999,00</span>
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-12 mb-10 max-w-2xl mx-auto border border-gray-100 shadow-sm">
+                    <p class="text-gray-500 mb-2 text-lg">Preço de Lançamento</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-8">
+                        <div class="flex items-center gap-2">
+                            <span class="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight">R$ 1.999,00</span>
+                        </div>
                     </div>
                     
-                    <div class="flex justify-center">
+                    <!-- Yampi Script -->
+                    <div class="flex justify-center scale-110">
                         <script class="ymp-script" src="https://api.yampi.io/v2/rd-mobility/public/buy-button/PETIUQZ10O/js"></script>
                     </div>
                     
-                    <div class="mt-8 flex flex-col items-center gap-2">
-                        <p class="text-sm text-gray-500 flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            Frete Seguro para todo o Brasil
-                        </p>
-                        <p class="text-xs text-gray-400">Compra processada em ambiente criptografado</p>
-                    </div>
+                    <p class="text-sm text-gray-500 mt-8 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Compra 100% Segura
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-gray-50 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+    <!-- CTA -->
+    <section id="contact" class="py-24 md:py-32 bg-[#1d1d1f]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-6">
+                    Transforme o cuidado
+                    <br />
+                    <span class="text-[#86868b]">em qualidade de vida.</span>
+                </h2>
+                <p class="text-xl text-[#86868b] max-w-2xl mx-auto mb-12">
+                    Entre em contato e descubra como a Cadeira Multiuso RD Mobility pode fazer a diferença na sua rotina.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#1d1d1f] rounded-full font-semibold text-lg hover:bg-[#f5f5f7] transition-all hover:scale-105">
+                        <!-- MessageCircle -->
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        WhatsApp
+                        <!-- ArrowRight -->
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    
+                    <a href="tel:+5500000000000" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent text-white border border-[#424245] rounded-full font-semibold text-lg hover:border-[#6e6e73] transition-all hover:scale-105">
+                        <!-- Phone -->
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Ligar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#f5f5f7]">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div>
-                    <p class="text-xl font-semibold text-gray-900">RD Mobility</p>
-                    <p class="text-sm text-gray-500">© <span id="year"></span> Todos os direitos reservados.</p>
+                <div class="text-center md:text-left">
+                    <p class="text-2xl font-semibold text-[#1d1d1f] tracking-tight">RD Mobility</p>
+                    <p class="text-sm text-[#6e6e73] mt-1">Revolução em mobilidade e conforto</p>
                 </div>
-                <div class="flex gap-6">
-                    <a href="https://wa.me/5547999999999" class="text-gray-600 hover:text-gray-900 transition-colors">Suporte WhatsApp</a>
+                
+                <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                    <button onclick="scrollToSection('features')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Recursos</button>
+                    <button onclick="scrollToSection('specs')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Especificações</button>
+                    <button onclick="scrollToSection('gallery')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Galeria</button>
+                    <button onclick="scrollToSection('contact')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Contato</button>
                 </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-[#d2d2d7]">
+                <p class="text-center text-xs text-[#6e6e73]">
+                    © <span id="year"></span> RD Mobility. Todos os direitos reservados.
+                </p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
+        // Set Year
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // Mobile Menu
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             const overlay = document.getElementById('mobileMenuOverlay');
-            document.getElementById('menuIcon').classList.toggle('hidden');
-            document.getElementById('closeIcon').classList.toggle('hidden');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+            
             menu.classList.toggle('active');
-            overlay.classList.toggle('hidden');
+            
+            if (menu.classList.contains('active')) {
+                overlay.classList.remove('hidden');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                overlay.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
         }
 
+        // Smooth Scroll
         function scrollToSection(id) {
             const element = document.getElementById(id);
-            if (element) element.scrollIntoView({ behavior: 'smooth' });
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
 
-        // Gallery logic
+        // Gallery
         const images = [
             'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png',
             'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png',
-            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png'
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/adc706845_4253329b-8f55-46d8-b181-fae7f38917fa.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/caa3b3a93_a6c38c4a-b46e-439b-a866-55ed90a368a8.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/deb5413d0_b0a0e053-8ef5-496d-a738-6812256eb329.png'
         ];
+        
         let currentImage = 0;
+        const mainImage = document.getElementById('mainImage');
+        const thumbnails = document.getElementById('thumbnails').children;
+
         function updateGallery() {
-            const img = document.getElementById('mainImage');
-            img.style.opacity = '0';
+            mainImage.style.opacity = '0';
             setTimeout(() => {
-                img.src = images[currentImage];
-                img.style.opacity = '1';
-            }, 200);
+                mainImage.src = images[currentImage];
+                mainImage.style.opacity = '1';
+            }, 300);
+
+            // Update thumbnails
+            for (let i = 0; i < thumbnails.length; i++) {
+                if (i === currentImage) {
+                    thumbnails[i].classList.remove('opacity-60', 'hover:opacity-100');
+                    thumbnails[i].classList.add('ring-2', 'ring-gray-900', 'ring-offset-2');
+                } else {
+                    thumbnails[i].classList.add('opacity-60', 'hover:opacity-100');
+                    thumbnails[i].classList.remove('ring-2', 'ring-gray-900', 'ring-offset-2');
+                }
+            }
         }
-        function nextImage() { currentImage = (currentImage + 1) % images.length; updateGallery(); }
-        function prevImage() { currentImage = (currentImage - 1 + images.length) % images.length; updateGallery(); }
+
+        function setImage(index) {
+            currentImage = index;
+            updateGallery();
+        }
+
+        function nextImage() {
+            currentImage = (currentImage + 1) % images.length;
+            updateGallery();
+        }
+
+        function prevImage() {
+            currentImage = (currentImage - 1 + images.length) % images.length;
+            updateGallery();
+        }
     </script>
 </body>
 </html>
