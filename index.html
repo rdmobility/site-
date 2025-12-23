@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RD Mobility - Cadeira Multiuso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .bounce { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .hero-image { animation: scaleIn 1s 0.3s ease-out forwards; opacity: 0; }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        .navbar-blur { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+        .mobile-menu.active { transform: translateX(0); }
+    </style>
+</head>
+<body class="bg-white">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="text-xl font-semibold text-gray-900 tracking-tight">RD Mobility</a>
+                <div class="hidden md:flex items-center gap-8">
+                    <button onclick="scrollToSection('features')" class="text-sm text-gray-900 hover:text-gray-600 transition-colors">Recursos</button>
+                    <button onclick="scrollToSection('specs')" class="text-sm text-gray-900 hover:text-gray-600 transition-colors">Especificações</button>
+                    <button onclick="scrollToSection('gallery')" class="text-sm text-gray-900 hover:text-gray-600 transition-colors">Galeria</button>
+                    <a href="https://wa.me/5547999999999" target="_blank" class="text-sm font-medium text-white bg-gray-900 px-5 py-2.5 rounded-full hover:bg-gray-700 transition-colors">Contato</a>
+                </div>
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2 -mr-2">
+                    <svg id="menuIcon" class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    <svg id="closeIcon" class="w-6 h-6 text-gray-900 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 z-40 md:hidden hidden">
+        <div class="absolute inset-0 bg-black/20" onclick="toggleMobileMenu()"></div>
+        <div id="mobileMenu" class="mobile-menu absolute right-0 top-0 bottom-0 w-72 bg-white shadow-2xl">
+            <div class="pt-20 px-6">
+                <button onclick="scrollToSection('features'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Recursos</button>
+                <button onclick="scrollToSection('specs'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Especificações</button>
+                <button onclick="scrollToSection('gallery'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Galeria</button>
+                <a href="https://wa.me/5547999999999" target="_blank" class="mt-6 block text-center text-lg font-medium text-white bg-gray-900 px-6 py-3 rounded-full">Contato</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-16 text-center">
+            <div class="fade-in">
+                <span class="inline-block text-sm font-medium tracking-widest text-gray-500 uppercase mb-6">RD Mobility</span>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold text-gray-900 tracking-tight leading-tight mb-6">Cadeira Multiuso</h1>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">A revolução em mobilidade e conforto.<br><span class="text-gray-900">Para você e quem você ama.</span></p>
+            </div>
+            <div class="mt-12 md:mt-16 hero-image"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png" alt="Cadeira Multiuso" class="mx-auto max-w-full h-auto max-h-[60vh] object-contain drop-shadow-2xl"></div>
+            <div class="mt-12" style="animation: fadeIn 0.6s 1s ease-out forwards; opacity: 0;"><button onclick="scrollToSection('features')" class="flex flex-col items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mx-auto"><span class="text-sm font-medium">Descobrir mais</span><svg class="w-5 h-5 bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button></div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 md:mb-24 fade-in"><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight mb-6">Uma cadeira.<br><span class="text-gray-600">Infinitas possibilidades.</span></h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+                <div class="text-center group fade-in"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Banho</h3><p class="text-gray-600 leading-relaxed">Perfeita para uso no banheiro, com design resistente à água.</p></div>
+                <div class="text-center group fade-in" style="animation-delay:0.1s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Uso Interno</h3><p class="text-gray-600 leading-relaxed">Funciona como cadeira de rodas para deslocamentos em casa.</p></div>
+                <div class="text-center group fade-in" style="animation-delay:0.2s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Cuidados Diários</h3><p class="text-gray-600 leading-relaxed">Ideal para refeições em família, banho de sol ou visitas.</p></div>
+                <div class="text-center group fade-in" style="animation-delay:0.3s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Segurança</h3><p class="text-gray-600 leading-relaxed">Quatro rodízios giratórios com travas garantem estabilidade.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-24 md:py-32 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight mb-6">Design pensado em cada detalhe.</h2><p class="text-xl text-gray-600 max-w-2xl mx-auto">Engenharia de precisão combinada com materiais premium.</p></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-3xl p-8 md:p-12 flex items-center justify-center fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/7a70ceef1_965a0687-9e98-46a5-817b-79a3bacd1caf.png" alt="Cadeira completa" class="max-w-full h-auto max-h-[500px] object-contain"></div>
+                <div class="bg-white rounded-3xl p-8 flex flex-col fade-in" style="animation-delay:0.1s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/3b6bf5419_998bd91a-e8e8-4beb-bfdb-3f81b1abe6ef.png" alt="Altura ajustável" class="max-w-full h-auto max-h-[300px] object-contain mx-auto mb-6"><h3 class="text-2xl font-semibold text-gray-900 mb-2">Altura Ajustável</h3><p class="text-gray-600">Sistema de regulagem de 48cm a 68cm para adaptação perfeita.</p></div>
+                <div class="bg-white rounded-3xl p-8 flex flex-col fade-in" style="animation-delay:0.2s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c192f73ff_a13d7b6e-cbf6-4dfb-90e4-aad877a155fb.png" alt="Rodízios" class="max-w-full h-auto max-h-[300px] object-contain mx-auto mb-6"><h3 class="text-2xl font-semibold text-gray-900 mb-2">Rodízios Premium</h3><p class="text-gray-600">Quatro rodízios giratórios com travas individuais.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comfort -->
+    <section class="py-24 md:py-32 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="fade-in"><span class="text-sm font-medium tracking-widest text-gray-400 uppercase mb-6 block">Conforto Superior</span><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-8 leading-tight">O assento mais<br><span class="text-gray-400">confortável</span><br>do mercado.</h2><p class="text-xl text-gray-400 leading-relaxed mb-8">Espuma de alta densidade para horas de conforto.</p><div class="flex flex-wrap gap-8"><div><p class="text-4xl font-semibold">135kg</p><p class="text-gray-400 mt-1">Capacidade máxima</p></div><div><p class="text-4xl font-semibold">180°</p><p class="text-gray-400 mt-1">Abertura traseira</p></div></div></div>
+                <div class="fade-in" style="animation-delay:0.2s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png" alt="Vista traseira" class="w-full h-auto rounded-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caregiver -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="order-2 lg:order-1 fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/caa3b3a93_a6c38c4a-b46e-439b-a866-55ed90a368a8.png" alt="Vista frontal" class="w-full h-auto max-h-[600px] object-contain"></div>
+                <div class="order-1 lg:order-2 fade-in"><span class="text-sm font-medium tracking-widest text-gray-600 uppercase mb-6 block">Para Cuidadores</span><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-8 leading-tight">Cuide de quem você ama.<br><span class="text-gray-600">Sem se machucar.</span></h2><p class="text-xl text-gray-600 leading-relaxed mb-10">Nossa abertura traseira exclusiva de 180° elimina movimentos prejudiciais à coluna.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Reduz significativamente o esforço físico</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Minimiza risco de hérnia de disco</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Previne bico de papagaio</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Alivia dores no nervo ciático</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Abertura traseira de 180° exclusiva</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs -->
+    <section id="specs" class="py-24 md:py-32 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Especificações Técnicas</h2><p class="text-xl text-gray-600">Precisão em cada medida.</p></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/2fa8c6847_2260d0d8-f324-4c0d-98a5-927211a1b745.png" alt="Medidas" class="w-full h-auto rounded-2xl"></div>
+                <div><div class="bg-white rounded-3xl p-8 md:p-10">
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Altura Ajustável</span><span class="text-gray-900 font-semibold">43 - 68 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Largura do Assento</span><span class="text-gray-900 font-semibold">46 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Profundidade do Assento</span><span class="text-gray-900 font-semibold">46 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Largura da Base</span><span class="text-gray-900 font-semibold">55 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Comprimento da Base</span><span class="text-gray-900 font-semibold">64 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Espessura da Base</span><span class="text-gray-900 font-semibold">10 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Capacidade Máxima</span><span class="text-gray-900 font-semibold">135 kg</span></div>
+                    <div class="flex justify-between items-center py-4"><span class="text-gray-600">Abertura Traseira</span><span class="text-gray-900 font-semibold">180°</span></div>
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Galeria</h2>
+                <p class="text-xl text-gray-600">Explore cada ângulo.</p>
+            </div>
+            <div class="relative bg-gray-100 rounded-3xl overflow-hidden mb-6">
+                <div class="aspect-[16/10] flex items-center justify-center p-8">
+                    <img id="mainImage" src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png" alt="Vista" class="max-w-full max-h-full object-contain transition-opacity duration-300">
+                </div>
+                <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Thumbnails -->
+            <div class="flex justify-center gap-3 overflow-x-auto pb-2" id="thumbnails">
+                <button onclick="setImage(0)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 ring-2 ring-gray-900 ring-offset-2">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png" alt="Vista lateral" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(1)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png" alt="Vista traseira" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(2)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png" alt="Vista completa" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(3)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/adc706845_4253329b-8f55-46d8-b181-fae7f38917fa.png" alt="Vista frontal" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(4)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/caa3b3a93_a6c38c4a-b46e-439b-a866-55ed90a368a8.png" alt="Vista angular" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(5)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/deb5413d0_b0a0e053-8ef5-496d-a738-6812256eb329.png" alt="Vista perspectiva" class="w-full h-full object-cover bg-gray-100">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="py-24 md:py-32 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-6">Transforme o cuidado<br><span class="text-gray-400">em qualidade de vida.</span></h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">Entre em contato e descubra como a Cadeira Multiuso RD Mobility pode fazer a diferença.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5547999999999" target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover:scale-105">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195
+    
+  </body>
+  
+</html>
