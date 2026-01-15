@@ -86,6 +86,7 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuContent = document.getElementById('mobile-menu-content');
     const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
 
     // Lógica de Scroll (isScrolled)
     window.addEventListener('scroll', () => {
@@ -106,15 +107,15 @@
             // Fechar
             mobileMenuContent.classList.add('translate-x-full');
             setTimeout(() => mobileMenu.classList.add('hidden'), 300);
-            menuIcon.setAttribute('data-lucide', 'menu');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
         } else {
             // Abrir
             mobileMenu.classList.remove('hidden');
             setTimeout(() => mobileMenuContent.classList.remove('translate-x-full'), 10);
-            menuIcon.setAttribute('data-lucide', 'x');
+            menuIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
         }
-        // Atualiza o ícone (Lucide)
-        lucide.createIcons();
     }
 
     // Função de Scroll Suave
