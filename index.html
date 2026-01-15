@@ -49,13 +49,8 @@
             </div>
 
             <button onclick="toggleMobileMenu()" class="md:hidden p-2 -mr-2 text-[#1d1d1f]">
-    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-    </svg>
-</button>
+                <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+            </button>
         </div>
     </div>
 </nav>
@@ -91,7 +86,6 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuContent = document.getElementById('mobile-menu-content');
     const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
 
     // Lógica de Scroll (isScrolled)
     window.addEventListener('scroll', () => {
@@ -112,15 +106,15 @@
             // Fechar
             mobileMenuContent.classList.add('translate-x-full');
             setTimeout(() => mobileMenu.classList.add('hidden'), 300);
-            menuIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
+            menuIcon.setAttribute('data-lucide', 'menu');
         } else {
             // Abrir
             mobileMenu.classList.remove('hidden');
             setTimeout(() => mobileMenuContent.classList.remove('translate-x-full'), 10);
-            menuIcon.classList.add('hidden');
-            closeIcon.classList.remove('hidden');
+            menuIcon.setAttribute('data-lucide', 'x');
         }
+        // Atualiza o ícone (Lucide)
+        lucide.createIcons();
     }
 
     // Função de Scroll Suave
@@ -139,6 +133,19 @@
         }
     }
 </script>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 z-40 md:hidden hidden">
+        <div class="absolute inset-0 bg-black/20" onclick="toggleMobileMenu()"></div>
+        <div id="mobileMenu" class="mobile-menu absolute right-0 top-0 bottom-0 w-72 bg-white shadow-2xl">
+            <div class="pt-20 px-6">
+                <button onclick="scrollToSection('features'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Recursos</button>
+                <button onclick="scrollToSection('specs'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Especificações</button>
+                <button onclick="scrollToSection('gallery'); toggleMobileMenu();" class="text-left text-lg text-gray-900 py-3 border-b border-gray-200 w-full">Galeria</button>
+                <a href="https://wa.me/5547984981584" target="_blank" class="mt-6 block text-center text-lg font-medium text-white bg-gray-900 px-6 py-3 rounded-full">Contato</a>
+            </div>
+        </div>
+    </div>
     
     <!-- Hero -->
     <section class="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
