@@ -17,7 +17,7 @@
         .navbar-blur { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
         .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
         .mobile-menu.active { transform: translateX(0); }
-        /* Estilos do Botão Flutuante do WhatsApp */
+        
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -95,14 +95,441 @@
             <div class="mt-12" style="animation: fadeIn 0.6s 1s ease-out forwards; opacity: 0;"><button onclick="scrollToSection('features')" class="flex flex-col items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mx-auto"><span class="text-sm font-medium">Descobrir mais</span><svg class="w-5 h-5 bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button></div>
         </div>
     </section>
-    <!-- Restante das seções (Features, Showcase, Comfort, etc) permanece igual... -->
+    <!-- Features -->
+    <section id="features" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 md:mb-24 fade-in"><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight mb-6">Uma cadeira.<br><span class="text-gray-600">Infinitas possibilidades.</span></h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+                <div class="text-center group fade-in"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Banho</h3><p class="text-gray-600 leading-relaxed">Perfeita para uso no banheiro, com design resistente à água.</p></div>
+                <div class="text-center group fade-in" style="animation-delay:0.1s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Uso Interno</h3><p class="text-gray-600 leading-relaxed">Funciona como cadeira de rodas para deslocamentos em casa.</p></div>
+                <div class="text-center group fade-in" style="animation-delay:0.2s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Cuidados Diários</h3><p class="text-gray-600 leading-relaxed">Ideal para refeições em família, banho de sol ou visitas.</p></div>
+                <div class="text-center group fade-in" style="animation-delay:0.3s"><div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-6 group-hover:bg-gray-200 transition-colors"><svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><h3 class="text-xl font-semibold text-gray-900 mb-3">Segurança</h3><p class="text-gray-600 leading-relaxed">Rodízios giratórios com travas garantem estabilidade.</p></div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Showcase -->
+    <section class="py-24 md:py-32 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight mb-6">Design pensado em cada detalhe.</h2><p class="text-xl text-gray-600 max-w-2xl mx-auto">Engenharia de precisão combinada com materiais premium.</p></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-3xl p-8 md:p-12 flex items-center justify-center fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/adc706845_4253329b-8f55-46d8-b181-fae7f38917fa.png" alt="Cadeira completa" class="max-w-full h-auto max-h-[500px] object-contain"></div>
+                <div class="bg-white rounded-3xl p-8 flex flex-col fade-in" style="animation-delay:0.1s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/3b6bf5419_998bd91a-e8e8-4beb-bfdb-3f81b1abe6ef.png" alt="Altura ajustável" class="max-w-full h-auto max-h-[300px] object-contain mx-auto mb-6"><h3 class="text-2xl font-semibold text-gray-900 mb-2">Altura Ajustável</h3><p class="text-gray-600">Sistema de regulagem de 48cm a 70cm para adaptação perfeita.</p></div>
+                <div class="bg-white rounded-3xl p-8 flex flex-col fade-in" style="animation-delay:0.2s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/d0ca1c014_88ab6cc2-00e7-4e75-ad5e-5112b01ef4ba1.png" alt="Rodízios" class="max-w-full h-auto max-h-[300px] object-contain mx-auto mb-6"><h3 class="text-2xl font-semibold text-gray-900 mb-2">Rodízios Premium</h3><p class="text-gray-600">Quatro rodízios giratórios com travas individuais.</p></div>
+            </div>
+        </div>
+    </section>
+    <!-- Comfort -->
+    <section class="py-24 md:py-32 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="fade-in"><span class="text-sm font-medium tracking-widest text-gray-400 uppercase mb-6 block">Conforto Superior</span><h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-8 leading-tight">O assento mais<br><span class="text-gray-400">confortável</span><br>do mercado.</h2><p class="text-xl text-gray-400 leading-relaxed mb-8">Espuma de alta densidade para horas de conforto.</p><div class="flex flex-wrap gap-8"><div><p class="text-4xl font-semibold">135kg</p><p class="text-gray-400 mt-1">Capacidade máxima</p></div><div><p class="text-4xl font-semibold">180°</p><p class="text-gray-400 mt-1">Abertura traseira</p></div></div></div>
+                <div class="fade-in" style="animation-delay:0.2s"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/7982adee7_b7c27b12-645c-4987-a367-a44e1d1057a3.png" alt="Vista traseira" class="w-full h-auto rounded-3xl"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Caregiver -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="order-2 lg:order-1 fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/964ca69a4_adba9235-0518-4437-852f-7b37888fc382.png" alt="Vista frontal" class="w-full h-auto max-h-[600px] object-contain"></div>
+                <div class="order-1 lg:order-2 fade-in"><span class="text-sm font-medium tracking-widest text-gray-600 uppercase mb-6 block">Para Cuidadores</span><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-8 leading-tight">Cuide de quem você ama.<br><span class="text-gray-600">Sem se machucar.</span></h2><p class="text-xl text-gray-600 leading-relaxed mb-10">Nossa abertura traseira exclusiva de 180° elimina movimentos prejudiciais à coluna.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Reduz significativamente o esforço físico</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Minimiza risco de hérnia de disco</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Previne bico de papagaio</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Alivia dores no nervo ciático</span></li>
+                        <li class="flex items-center gap-4"><span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center"><svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span><span class="text-gray-900 text-lg">Abertura traseira de 180° exclusiva</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Specs -->
+    <section id="specs" class="py-24 md:py-32 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in"><h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Especificações Técnicas</h2><p class="text-xl text-gray-600">Precisão em cada medida.</p></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in"><img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/e2949ffeb_cd885a92-b1c5-4180-82ba-2056704a2024.png" alt="Medidas" class="w-full h-auto rounded-2xl"></div>
+                <div><div class="bg-white rounded-3xl p-8 md:p-10">
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Altura Ajustável</span><span class="text-gray-900 font-semibold">48 - 70 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Largura do Assento</span><span class="text-gray-900 font-semibold">46 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Profundidade do Assento</span><span class="text-gray-900 font-semibold">46 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Largura da Base</span><span class="text-gray-900 font-semibold">55 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Comprimento da Base</span><span class="text-gray-900 font-semibold">64 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Altura da Base</span><span class="text-gray-900 font-semibold">10 cm</span></div>
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200"><span class="text-gray-600">Capacidade Máxima</span><span class="text-gray-900 font-semibold">135kg</span></div>
+                    <div class="flex justify-between items-center py-4"><span class="text-gray-600">Abertura Traseira</span><span class="text-gray-900 font-semibold">180°</span></div>
+                </div></div>
+            </div>
+        </div>
+    </section>
+    <!-- Usage Section -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1d1d1f] tracking-tight mb-6">
+                    Usabilidade Real
+                </h2>
+                <p class="text-xl text-[#6e6e73] max-w-2xl mx-auto">
+                    Veja como a Cadeira Multiuso se adapta perfeitamente ao dia a dia, proporcionando segurança e independência em cada momento.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="group bg-[#f5f5f7] rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 fade-in">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/bd948e6cc_895dcd1f-b444-4fc8-8db5-4f7899d918521.png" 
+                             alt="Apoio na Cama" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#1d1d1f] mb-2">
+                            Apoio na Cama
+                        </h3>
+                        <p class="text-[#6e6e73]">
+                            Auxílio seguro para sentar e levantar
+                        </p>
+                    </div>
+                </div>
+                <div class="group bg-[#f5f5f7] rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 fade-in" style="animation-delay: 0.1s">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/85d2eb1f2_a6ec4f8b-5f9e-4193-93ba-166887a9e4f11.png" 
+                             alt="Abertura 180°" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#1d1d1f] mb-2">
+                            Abertura 180°
+                        </h3>
+                        <p class="text-[#6e6e73]">
+                            Flexibilidade total para diferentes usos
+                        </p>
+                    </div>
+                </div>
+                <div class="group bg-[#f5f5f7] rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 fade-in" style="animation-delay: 0.2s">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/b8c4903a0_1ea6ca71-7114-440d-82fd-789a5b6b2670.png" 
+                             alt="Uso no Banheiro" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#1d1d1f] mb-2">
+                            Uso no Banheiro
+                        </h3>
+                        <p class="text-[#6e6e73]">
+                            Segurança e conforto no vaso sanitário
+                        </p>
+                    </div>
+                </div>
+                <div class="group bg-[#f5f5f7] rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 fade-in" style="animation-delay: 0.3s">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694355796f920c3d07b24717/943bbeda9_f6268f28-4127-4273-a472-9e12da7c45de.png" 
+                             alt="Uso no Banho" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#1d1d1f] mb-2">
+                            Uso no Banho
+                        </h3>
+                        <p class="text-[#6e6e73]">
+                            Estabilidade e independência no chuveiro
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery -->
+    <section id="gallery" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-6">Galeria</h2>
+                <p class="text-xl text-gray-600">Explore cada ângulo.</p>
+            </div>
+            <div class="relative bg-gray-100 rounded-3xl overflow-hidden mb-6">
+                <div class="aspect-[16/10] flex items-center justify-center p-8">
+                    <img id="mainImage" src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png" alt="Vista" class="max-w-full max-h-full object-contain transition-opacity duration-300">
+                </div>
+                <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex justify-center gap-3 overflow-x-auto pb-2" id="thumbnails">
+                <button onclick="setImage(0)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 ring-2 ring-gray-900 ring-offset-2">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png" alt="Vista lateral" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(1)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png" alt="Vista traseira" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(2)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png" alt="Vista completa" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(3)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/adc706845_4253329b-8f55-46d8-b181-fae7f38917fa.png" alt="Vista frontal" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(4)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/caa3b3a93_a6c38c4a-b46e-439b-a866-55ed90a368a8.png" alt="Vista angular" class="w-full h-full object-cover bg-gray-100">
+                </button>
+                <button onclick="setImage(5)" class="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden transition-all duration-300 opacity-60 hover:opacity-100">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/deb5413d0_b0a0e053-8ef5-496d-a738-6812256eb329.png" alt="Vista perspectiva" class="w-full h-full object-cover bg-gray-100">
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="fade-in">
+                <span class="inline-block text-sm font-medium tracking-widest text-indigo-600 uppercase mb-4">
+                    Oferta Exclusiva
+                </span>
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-10">
+                    Garanta a sua agora
+                </h2>
+                <div class="bg-gray-50 rounded-3xl p-8 md:p-12 mb-10 max-w-2xl mx-auto border border-gray-100 shadow-sm">
+                    <p class="text-gray-500 mb-3 text-base uppercase tracking-wide">
+                        Preço de Lançamento
+                    </p>
+                    <div class="flex items-center justify-center mb-8">
+                        <span class="text-xl md:text-2xl text-gray-500 font-medium mr-1">
+                            R$
+                        </span>
+                        <span class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                            1.849,00
+                        </span>
+                    </div>
+                    <div class="flex justify-center scale-110">
+                        <script class="ymp-script" src="https://api.yampi.io/v2/rd-mobility-ltda/public/buy-button/8KGZ7J0P52/js"></script>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-8 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Compra 100% Segura
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA -->
+    <section id="contact" class="py-24 md:py-32 bg-[#1d1d1f]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-6">
+                    Transforme o cuidado
+                    <br />
+                    <span class="text-[#86868b]">em qualidade de vida.</span>
+                </h2>
+                <p class="text-xl text-[#86868b] max-w-2xl mx-auto mb-12">
+                    Entre em contato e descubra como a Cadeira Multiuso RD Mobility pode fazer a diferença na sua rotina.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5547984981584" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-[#1d1d1f] rounded-full font-semibold text-lg hover:bg-[#f5f5f7] transition-all hover:scale-105">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        WhatsApp
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    
+                    <a href="tel:+5547984981594" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent text-white border border-[#424245] rounded-full font-semibold text-lg hover:border-[#6e6e73] transition-all hover:scale-105">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Ligar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Warranty Section -->
+    <section class="py-24 md:py-32 bg-[#f5f5f7]">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <div class="text-center mb-16 fade-in">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-[#1d1d1f] rounded-2xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-semibold text-[#1d1d1f] tracking-tight mb-4">
+                    Garantia
+                </h2>
+                <p class="text-xl text-[#6e6e73]">
+                    Condições e prazo
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-3xl shadow-lg p-8 fade-in">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#1d1d1f]">
+                            Condições da Garantia
+                        </h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">A cadeira possui garantia legal de 90 (noventa) dias, para todos os componentes</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">O prazo da garantia é contabilizado a partir da emissão da nota fiscal de compra</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">A garantia é concedida contra eventuais vícios e/ou defeitos de fabricação que afetem a qualidade e torne a cadeira inoperante</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Para comprovação do prazo e requerimento da garantia, exige-se a apresentação da nota fiscal</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">A substituição e/ou reparo de peças e componentes será concedida ao consumidor sem ônus, conforme Art.18 do CDC</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-5 h-5 rounded-full bg-green-500 flex items-center justify-center mt-0.5">
+                                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">A decisão será tomada seguindo critérios técnicos avaliados pelo setor de pós-vendas da fabricante RD MOBILITY</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-8 fade-in">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#1d1d1f]">
+                            Exclusão e Invalidade
+                        </h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Despesas de transporte, frete, seguro são de responsabilidade do consumidor final</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Tentativa ou execução de reparo em qualquer componente</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Desgaste natural, condicionado a partes móveis, molas, rodízios etc</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Quando o peso do paciente extrapolar o limite seguro especificado pelo fabricante</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Uso indevido em desacordo com as orientações apresentadas</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Expor a cadeira em ambiente agressivo (temperatura alta, gases, chuvas, etc)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="flex-shrink-0 w-4 h-4 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                                <svg class="w-2.5 h-2.5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <span class="text-[#6e6e73] text-sm leading-relaxed">Alterar ou modificar qualquer componente por pessoa não autorizada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="py-12 bg-[#f5f5f7]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-2xl font-semibold text-[#1d1d1f] tracking-tight">RD Mobility</p>
+                    <p class="text-sm text-[#6e6e73] mt-1">Revolução em mobilidade e conforto</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                    <button onclick="scrollToSection('features')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Recursos</button>
+                    <button onclick="scrollToSection('specs')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Especificações</button>
+                    <button onclick="scrollToSection('gallery')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Galeria</button>
+                    <button onclick="scrollToSection('contact')" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">Contato</button>
+                    <a href="politica-devolucao.html" class="text-sm text-[#6e6e73] hover:text-[#1d1d1f] transition-colors">
+                        Política de Devolução
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-[#d2d2d7]">
+                <p class="text-center text-xs text-[#6e6e73]">
+                    © <span id="year"></span> RD Mobility. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
     <!-- Botão Flutuante do WhatsApp -->
     <a href="https://wa.me/5547984981584" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
     </a>
-    <!-- Scripts (Smooth Scroll, Gallery, etc) -->
+    <!-- Scripts -->
     <script>
         // Set Year
         document.getElementById('year').textContent = new Date().getFullYear();
@@ -134,7 +561,48 @@
                 element.scrollIntoView({ behavior: 'smooth' });
             }
         }
-        // Lógica de Galeria omitida para brevidade, mas deve ser mantida igual...
+        // Gallery
+        const images = [
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/c32be49da_55bef7c9-75a8-4899-bfde-7aaad47f0383.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/569be5c8f_fc006dcb-fc23-4c20-98e3-f144ca3a0d63.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/9013f6324_5bfc262b-8ecd-41e0-a1a3-07e4b48397c9.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/adc706845_4253329b-8f55-46d8-b181-fae7f38917fa.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/caa3b3a93_a6c38c4a-b46e-439b-a866-55ed90a368a8.png',
+            'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_6943529a6b6e06d21b788c46/deb5413d0_b0a0e053-8ef5-496d-a738-6812256eb329.png'
+        ];
+        
+        let currentImage = 0;
+        const mainImage = document.getElementById('mainImage');
+        const thumbnails = document.getElementById('thumbnails').children;
+        function updateGallery() {
+            mainImage.style.opacity = '0';
+            setTimeout(() => {
+                mainImage.src = images[currentImage];
+                mainImage.style.opacity = '1';
+            }, 300);
+            // Update thumbnails
+            for (let i = 0; i < thumbnails.length; i++) {
+                if (i === currentImage) {
+                    thumbnails[i].classList.remove('opacity-60', 'hover:opacity-100');
+                    thumbnails[i].classList.add('ring-2', 'ring-gray-900', 'ring-offset-2');
+                } else {
+                    thumbnails[i].classList.add('opacity-60', 'hover:opacity-100');
+                    thumbnails[i].classList.remove('ring-2', 'ring-gray-900', 'ring-offset-2');
+                }
+            }
+        }
+        function setImage(index) {
+            currentImage = index;
+            updateGallery();
+        }
+        function nextImage() {
+            currentImage = (currentImage + 1) % images.length;
+            updateGallery();
+        }
+        function prevImage() {
+            currentImage = (currentImage - 1 + images.length) % images.length;
+            updateGallery();
+        }
     </script>
 </body>
 </html>
